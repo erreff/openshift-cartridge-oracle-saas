@@ -40,7 +40,7 @@ export LD_LIBRARY_PATH=$tldpath
 # create oracle link
 #
 cd $OPENSHIFT_ORACLE_DIR/instantclient_12_1
-ln -s libclntsh.so.12.1 libclntsh.so
+/bin/ln -s libclntsh.so.12.1 libclntsh.so
 
 client_result "Oracle instant client 12 has been added to your applicaiton."
 client_result ""
