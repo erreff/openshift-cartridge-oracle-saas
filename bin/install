@@ -34,7 +34,7 @@ export PATH=$tpath
 # set LD_LIBRARY_PATH
 #
 tldpath=$OPENSHIFT_ORACLE_DIR/instantclient_12_1
-echo $tldpath > ~/.env/user_vars/LD_LIBRARY_PATH
+set_env_var 'OPENSHIFT_ORACLE_LD_LIBRARY_PATH_ELEMENT' "${OPENSHIFT_ORACLE_DIR}instantclient_12_1" ${OPENSHIFT_ORACLE_DIR}/env
 export LD_LIBRARY_PATH=$tldpath
 
 #
