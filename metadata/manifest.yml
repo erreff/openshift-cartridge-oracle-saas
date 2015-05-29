@@ -12,6 +12,7 @@ Cartridge-Vendor: erreff
 License: GPL
 Vendor: erreff
 Categories:
+- embedded
 - plugin
 Website: http://www.openshift.com
 Provides:
