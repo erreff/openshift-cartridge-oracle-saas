@@ -5,6 +5,7 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 mkdir -p ${OPENSHIFT_ORACLE_DIR}/run
 mkdir -p ${OPENSHIFT_ORACLE_DIR}/log
 mkdir -p ${OPENSHIFT_ORACLE_DIR}/var/events
+mkdir -p ${OPENSHIFT_DATA_DIR}tns
 
 #
 # Install Oracle InstantClient
@@ -22,6 +23,8 @@ set_env_var 'OPENSHIFT_ORACLE_DB_HOST' "myserver" ${OPENSHIFT_ORACLE_DIR}/env
 set_env_var 'OPENSHIFT_ORACLE_DB_SERVICE' "oraaa001" ${OPENSHIFT_ORACLE_DIR}/env
 set_env_var 'OPENSHIFT_ORACLE_DB_PORT' "1521" ${OPENSHIFT_ORACLE_DIR}/env
 set_env_var 'OPENSHIFT_ORACLE_INSTANTCLIENT_DIR' "${OPENSHIFT_ORACLE_DIR}instantclient_12_1" ${OPENSHIFT_ORACLE_DIR}/env
+# TNS_ADMIN
+set_env_var 'TNS_ADMIN' "${OPENSHIFT_DATA_DIR}tns/" ${OPENSHIFT_ORACLE_DIR}/env
 
 #
 # set PATH
