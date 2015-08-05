@@ -2,7 +2,7 @@
 Name: oracle
 Cartridge-Short-Name: ORACLE
 Architecture: x86_64
-Display-Name: oracle 1.0
+Display-Name: oracle client 1.0
 Description: Oracle connector cartridge
 Version: '1.0'
 Versions:
