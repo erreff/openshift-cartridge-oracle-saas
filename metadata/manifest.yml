@@ -8,9 +8,9 @@ Version: '1.0'
 Versions:
 - '1.0'
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: erreff
+Cartridge-Vendor: dsibscc
 License: GPL
-Vendor: erreff
+Vendor: dsibscc
 Categories:
 - embedded
 - plugin
